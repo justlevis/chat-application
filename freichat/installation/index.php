@@ -8,7 +8,7 @@ $_SESSION['index'] = md5(time() + rand(989, 98999));
 require '../hardcode.php';
 
 
-if ($installed == true) {
+if ($installed == false) {
     
     $_SESSION['error']="FreiChat is already installed on your server<br/>For security reasons , the installer has been locked.<br/>But if you want to install it again for a fresh reinstall or for any other reason <br/> please change the variable \$installed to false in ~/freichat/hardcode.php and then try again";
     header('Location: error.php');
